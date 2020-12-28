@@ -27,7 +27,7 @@ class App extends Component{
    const {user} = this.state
     return (
       <div>
-        <div>My name is {user.name} </div>
+        <div className="text-danger">My name is {user.name} </div>
         <div>My name is {user.username} </div>
       </div>
     
