@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc043aa2-5b0e-4715-a063-11531125a1d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App_old.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
@@ -13,6 +15,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1mGbroHu2HutJQpi10EsVoTpChP" />
   <component name="ProjectViewState">
@@ -40,7 +49,8 @@
       <updated>1609123075906</updated>
       <workItem from="1609123077047" duration="129000" />
       <workItem from="1609133032245" duration="2310000" />
-      <workItem from="1609202130850" duration="1223000" />
+      <workItem from="1609202130850" duration="2073000" />
+      <workItem from="1609219553395" duration="1827000" />
     </task>
     <servers />
   </component>
