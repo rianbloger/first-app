@@ -2,15 +2,25 @@ import React from 'react';
 import {Switch,Route} from "react-router-dom"
 import Home from "../views/Home";
 import About from "../views/About";
+import NotFound from "../views/errors/NotFound";
+import Login from "../views/auth/Login";
+import UsersIndex from "../views/users/Index";
+import Navbar from "../components/Navbar";
 function Router(props) {
     return (
             <Switch>
                 <Route exact path='/' >
-                    <Home/>
+                    <Navbar><Home/></Navbar>
                 </Route>
-                <Route  path='/' >
-                    <About/>
+                <Route  path='/about' >
+                    <Navbar><About/></Navbar>
                 </Route>
+                <Route  path='/users' >
+                    <Navbar><UsersIndex/></Navbar>
+                </Route>
+                <Route path="/login" component={Login} />
+                <Route path="*" component={NotFound} />
+
             </Switch>
     );
 }
