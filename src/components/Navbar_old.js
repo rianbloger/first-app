@@ -6,7 +6,7 @@ import { UserProvider } from '../views/context/User';
 import AuthenticatedUser from './AuthenticatedUser';
 
 function Navbar({children}) {
-    const {user} = useRecoilValue(authUser)
+    const {user} = useRecoilValue
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -30,7 +30,9 @@ function Navbar({children}) {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" aria-current="page" to="/">
-                                    {user.email}
+                                    <UserProvider>
+                                        <AuthenticatedUser/>
+                                    </UserProvider> 
                                 </NavLink>
                             </li>
                         </ul>
