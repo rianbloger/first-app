@@ -5,6 +5,7 @@ import About from "../views/About";
 import NotFound from "../views/errors/NotFound";
 import Login from "../views/auth/Login";
 import UsersIndex from "../views/users/Index";
+import UsersShow from "../views/users/Show";
 import Navbar from "../components/Navbar";
 function Router(props) {
     return (
@@ -15,10 +16,13 @@ function Router(props) {
                 <Route  path='/about' >
                     <Navbar><About/></Navbar>
                 </Route>
-                <Route  path='/users' >
+                <Route exact  path='/users' >
                     <Navbar><UsersIndex/></Navbar>
                 </Route>
-                <Route path="/login" component={Login} />
+                <Route  path='/users/:identifier' >
+                    <Navbar><UsersShow /></Navbar>
+                </Route>
+                <Route path="/login" component={Login} /> 
                 <Route path="*" component={NotFound} />
 
             </Switch>

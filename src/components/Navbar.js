@@ -1,5 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import { UserProvider } from '../views/context/User';
+import AuthenticatedUser from './AuthenticatedUser';
 
 function Navbar({children}) {
     return (
@@ -19,6 +21,16 @@ function Navbar({children}) {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" aria-current="page" to="/about">About</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" aria-current="page" to="/users">Users</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" aria-current="page" to="/">
+                                    <UserProvider>
+                                        <AuthenticatedUser/>
+                                    </UserProvider> 
+                                </NavLink>
                             </li>
                         </ul>
 

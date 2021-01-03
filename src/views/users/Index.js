@@ -27,10 +27,11 @@ function Index(props) {
                                 <div className="card">
                                     <div className="card-header">{user.name}</div>
                                     <div className="card-body">
-                                        <div>
-                                            {user.website}
+                                        <div className="mb-4" >
+                                            <a href={`HTTP://${user.website}`} target="blank" className="d-block mb-2" >{user.website}</a>
+                                            {user.username}
                                         </div>
-                                        <NavLink to=''>View profile</NavLink>
+                                        <NavLink className="btn btn-primary" to={`/users/${user.id}`}>View profile</NavLink>
                                     </div>
                                 </div>
                             </div>
